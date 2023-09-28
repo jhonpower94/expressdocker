@@ -10,11 +10,8 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "/invoice.html"));
 });
 
-app.get("/invoice", async (req, res) => {
-  const pdf = await invoice();
-  res.attachment("invoice.pdf");
-  res.contentType("application/pdf");
-  res.send(pdf);
+app.get("/invoice", (req, res) => {
+  invoice(res);
 });
 
 server.listen(port, () => {
