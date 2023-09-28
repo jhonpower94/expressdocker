@@ -1,7 +1,7 @@
 const puppeteer = require("puppeteer");
 require("dotenv").config();
 
-async function invoice(res) {
+async function invoice(req, res) {
   const browser = await puppeteer.launch({
     args: [
       "--disable-setuid-sandbox",
@@ -16,8 +16,9 @@ async function invoice(res) {
   });
   try {
     const page = await browser.newPage();
+    let Url = req.protocol + "://" + req.get("host");
 
-    await page.goto("http://localhost:8000", {
+    await page.goto(Url, {
       waitUntil: "networkidle0",
     });
     const pdf = await page.pdf({ format: "A4" });
