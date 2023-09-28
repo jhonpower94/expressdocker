@@ -11,9 +11,9 @@ app.get("/", (req, res) => {
 });
 
 app.get("/invoice", (req, res) => {
-  // invoice(req, res);
-  let fullUrl = req.protocol + "://" + req.get("host");
-  res.send(fullUrl);
+  invoice(req, res);
+ // let fullUrl = req.protocol + "://" + req.get("host");
+ // res.send(fullUrl);
 });
 
 server.listen(port, () => {
