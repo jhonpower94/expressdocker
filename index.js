@@ -16,7 +16,7 @@ app.use(express.json());
 app.set("view engine", "ejs");
 
 app.get(
-  "/:message/:to/:subject/:name/:sendername/:trackid/:packageType/:from_city/:from_state/from_country/:to_address/:to_city/:to_country/:time",
+  "/:to/:subject/:name/:sendername/:trackid/:packageType/:from_city/:from_state/from_country/:to_address/:to_city/:to_country/:time",
   (req, res) => {
     res.render("invoice", req.params);
     // res.sendFile(path.join(__dirname, "/invoice.html"));
