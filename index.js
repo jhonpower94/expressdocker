@@ -39,7 +39,7 @@ app.post("/invoice", (req, res) => {
 });
 
 app.post("/mail", (req, res) => {
-  mail(req, res, pdf);
+  mail(req, res);
 });
 
 server.listen(port, () => {
