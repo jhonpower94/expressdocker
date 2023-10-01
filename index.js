@@ -15,13 +15,10 @@ app.use(express.json());
 
 app.set("view engine", "ejs");
 
-app.get(
-  "/:name/:sendername/:trackid/:packageType/:from_city/:from_state/from_country/:to_address/:to_city/:to_country/:time",
-  (req, res) => {
-    res.render("invoice", req.params);
-    // res.sendFile(path.join(__dirname, "/invoice.html"));
-  }
-);
+app.get("/", (req, res) => {
+  res.render("invoice", req.params);
+  // res.sendFile(path.join(__dirname, "/invoice.html"));
+});
 
 app.post("/invoice", (req, res) => {
   invoice(req, res).then((pdf) => {
