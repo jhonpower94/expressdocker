@@ -37,7 +37,7 @@ async function invoice(req, res) {
     console.log(Url);
 
     await page.goto(
-      `${Url}/${name}/${sendername}/${trackid}/${packageType}/${from_city}/${from_state}/${from_country}/${to_address}/${to_city}/${to_country}/${time}`,
+      `${Url}${name}/${sendername}/${trackid}/${packageType}/${from_city}/${from_state}/${from_country}/${to_address}/${to_city}/${to_country}/${time}`,
       {
         waitUntil: "networkidle0",
       }
