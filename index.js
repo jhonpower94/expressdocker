@@ -16,7 +16,19 @@ app.use(express.json());
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("invoice", req.params);
+  res.render("invoice", {
+    name: req.query.name,
+    sendername: req.query.sendername,
+    trackid: req.query.trackid,
+    packageType: req.query.packageType,
+    from_city: req.query.from_city,
+    from_state: req.query.from_state,
+    from_country: req.query.from_country,
+    to_address: req.query.to_address,
+    to_city: req.query.to_city,
+    to_country: req.query.to_country,
+    time: req.query.time,
+  });
   // res.sendFile(path.join(__dirname, "/invoice.html"));
 });
 
