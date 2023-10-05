@@ -178,8 +178,6 @@
                               text-align: left;
                             "
                           >
-                            Hello, <%= name %>.
-                            <br />
                             Thanks for Shipping with us, Payment invoice
                           </td>
                         </tr>
@@ -200,19 +198,52 @@
                         <tr>
                           <td height="5"></td>
                         </tr>
+                        
                         <tr>
                           <td
                             style="
-                              font-size: 21px;
-                              color: #ff0000;
-                              letter-spacing: -1px;
+                              font-size: 15px;
+                              font-weight: bold;
                               font-family: 'Open Sans', sans-serif;
-                              line-height: 1;
+                              color: #006;
+                              line-height: 22px;
                               vertical-align: top;
                               text-align: right;
                             "
                           >
-                            Invoice
+                            Air Waybill
+                          </td>
+                        </tr>
+                        <tr>
+                          <td
+                            style="
+                              font-size: 15px;
+                              font-weight: bold;
+                              font-family: 'Open Sans', sans-serif;
+                              color: #006;
+                              line-height: 22px;
+                              vertical-align: top;
+                              text-align: right;
+                            "
+                          >
+                            (Diplomatic Luggage)
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td
+                            style="
+                              font-size: 15px;
+                              
+                              font-family: 'Open Sans', sans-serif;
+                              
+                              line-height: 22px;
+                              vertical-align: top;
+                              text-align: right;
+                            "
+                          >
+                          <br/>
+                            Support@icexpressdelivery.online
                           </td>
                         </tr>
                         <tr></tr>
@@ -233,8 +264,16 @@
                               text-align: right;
                             "
                           >
-                            <small>TRACK ID:</small> <%= trackid %><br />
-                            <small><%= time %></small>
+                            <small>TRACK ID:</small><br />
+                            <%= trackid %>
+                            <br />
+                            <br />
+                            <small
+                              >TRACK SHIPMENT<br />
+                              <a href="https://icexpressdelivery.online"
+                                >ICEXPRESS</a
+                              ></small
+                            >
                           </td>
                         </tr>
                       </tbody>
@@ -397,7 +436,7 @@
                         "
                         align="center"
                       >
-                       1Box. 25kg
+                        1Box. 25kg
                       </td>
                       <td
                         style="
@@ -410,7 +449,7 @@
                         "
                         align="right"
                       >
-                        $2,499.00
+                        $5,300.00
                       </td>
                     </tr>
                     <tr>
@@ -480,7 +519,7 @@
                           text-align: right;
                         "
                       >
-                        Subtotal
+                        Service
                       </td>
                       <td
                         style="
@@ -494,7 +533,7 @@
                         "
                         width="80"
                       >
-                        $2,514.00
+                        $2,100.00
                       </td>
                     </tr>
                     <tr>
@@ -508,7 +547,7 @@
                           text-align: right;
                         "
                       >
-                        Shipping &amp; Handling
+                        Special
                       </td>
                       <td
                         style="
@@ -520,7 +559,59 @@
                           text-align: right;
                         "
                       >
-                        $15.00
+                        $900.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          font-size: 15px;
+                          font-family: 'Open Sans', sans-serif;
+                          color: #646a6e;
+                          line-height: 22px;
+                          vertical-align: top;
+                          text-align: right;
+                        "
+                      >
+                        Insurance
+                      </td>
+                      <td
+                        style="
+                          font-size: 15px;
+                          font-family: 'Open Sans', sans-serif;
+                          color: #646a6e;
+                          line-height: 22px;
+                          vertical-align: top;
+                          text-align: right;
+                        "
+                      >
+                        $1,600.00
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          font-size: 15px;
+                          font-family: 'Open Sans', sans-serif;
+                          color: #646a6e;
+                          line-height: 22px;
+                          vertical-align: top;
+                          text-align: right;
+                        "
+                      >
+                        Other Vat
+                      </td>
+                      <td
+                        style="
+                          font-size: 15px;
+                          font-family: 'Open Sans', sans-serif;
+                          color: #646a6e;
+                          line-height: 22px;
+                          vertical-align: top;
+                          text-align: right;
+                        "
+                      >
+                        $700.00
                       </td>
                     </tr>
                     <tr>
@@ -534,7 +625,7 @@
                           text-align: right;
                         "
                       >
-                        <strong>Grand Total (Incl.Tax)</strong>
+                        <strong>Paid Total</strong>
                       </td>
                       <td
                         style="
@@ -546,33 +637,7 @@
                           text-align: right;
                         "
                       >
-                        <strong>$2,586.00</strong>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td
-                        style="
-                          font-size: 15px;
-                          font-family: 'Open Sans', sans-serif;
-                          color: #b0b0b0;
-                          line-height: 22px;
-                          vertical-align: top;
-                          text-align: right;
-                        "
-                      >
-                        <small>TAX</small>
-                      </td>
-                      <td
-                        style="
-                          font-size: 15px;
-                          font-family: 'Open Sans', sans-serif;
-                          color: #b0b0b0;
-                          line-height: 22px;
-                          vertical-align: top;
-                          text-align: right;
-                        "
-                      >
-                        <small>$72.40</small>
+                        <strong>$5,300.00</strong>
                       </td>
                     </tr>
                   </tbody>
@@ -669,7 +734,16 @@
                                 <%= from_city %><br />
                                 <%= from_state %><br />
                                 <%= from_country %><br />
-                                <%= time %>
+                                <%= time %><br />
+
+                                <img
+                                  src="https://firebasestorage.googleapis.com/v0/b/icexpress-21465.appspot.com/o/Michael-Jordan-personal-autograph.png?alt=media&token=0d3708ab-9f46-49a6-9d3b-dc52645ac0e4"
+                                  width="150"
+                                /><br />
+                                <img
+                                  src="https://firebasestorage.googleapis.com/v0/b/icexpress-21465.appspot.com/o/paid-rubber-stamp-vector-12315527.jpg?alt=media&token=650ebdc6-0c55-44aa-9ffb-73ac718c7634"
+                                  width="200"
+                                />
                               </td>
                             </tr>
                           </tbody>
@@ -739,72 +813,4 @@
       </td>
     </tr>
   </tbody>
-</table>
-<!-- /Information -->
-<table
-  width="100%"
-  border="0"
-  cellpadding="0"
-  cellspacing="0"
-  align="center"
-  class="fullTable"
-  bgcolor="#e1e1e1"
->
-  <tr>
-    <td>
-      <table
-        width="100%"
-        border="0"
-        cellpadding="0"
-        cellspacing="0"
-        align="center"
-        class="fullTable"
-        bgcolor="#ffffff"
-        style="border-radius: 0 0 10px 10px"
-      >
-        <tr>
-          <td>
-            <table
-              width="90%"
-              border="0"
-              cellpadding="0"
-              cellspacing="0"
-              align="center"
-              class="fullPadding"
-            >
-              <tbody>
-                <tr>
-                  <td
-                    style="
-                      font-size: 15px;
-                      color: #5b5b5b;
-                      font-family: 'Open Sans', sans-serif;
-                      line-height: 18px;
-                      vertical-align: top;
-                      text-align: left;
-                    "
-                  >
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/icexpress-21465.appspot.com/o/paid-rubber-stamp-vector-12315527.jpg?alt=media&token=650ebdc6-0c55-44aa-9ffb-73ac718c7634"
-                      width="200"
-                    />
-                    <img
-                      src="https://firebasestorage.googleapis.com/v0/b/icexpress-21465.appspot.com/o/Michael-Jordan-personal-autograph.png?alt=media&token=0d3708ab-9f46-49a6-9d3b-dc52645ac0e4"
-                      width="200"
-                    />
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr class="spacer">
-          <td height="50"></td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-  <tr>
-    <td height="20"></td>
-  </tr>
 </table>
