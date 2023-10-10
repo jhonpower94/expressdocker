@@ -13,7 +13,7 @@ async function sendMessage(req, res, pdfBuffer) {
       service: "gmail",
       auth: {
         user: "icexpressdeliveryservice@gmail.com", // generated ethereal user
-        pass: "icexpress@2023", // generated ethereal password
+        pass: "icexpress2023", // generated ethereal password
       },
     });
 
