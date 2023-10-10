@@ -24,7 +24,7 @@ async function sendMessage(req, res, pdfBuffer) {
       from: "icexpressdeliveryservice@gmail.com", // sender address
       bcc: to, // list of receivers
       subject: `${subject} / IceXpress Delivery ✅`,
-      text: "",
+      text: "Hello this is a strong one",
       attachments: {
         filename: "invoice.pdf",
         content: new Buffer.from(pdfBuffer),
