@@ -1,5 +1,7 @@
 const nodemailer = require("nodemailer");
 
+const { user, pass } = require("./config");
+
 async function mail(req, res) {
   const { message, to, subject, name } = req.body;
 
@@ -12,8 +14,8 @@ async function mail(req, res) {
     let transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "icexpressdeliveryservice@gmail.com", // generated ethereal user
-        pass: "vsguspbyaevbides", // generated ethereal password
+        user,
+        pass,
       },
     });
 
